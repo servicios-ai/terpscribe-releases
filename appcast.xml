@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>TerpScribe Updates</title>
+    <link>https://servicios-ai.github.io/terpscribe-releases/appcast.xml</link>
+    <description>Most recent updates for TerpScribe.</description>
+    <language>en</language>
+    <item>
+      <title>Version 0.9.42</title>
+      <sparkle:releaseNotesLink>https://github.com/servicios-ai/terpscribe-releases/releases/tag/v0.9.42</sparkle:releaseNotesLink>
+      <pubDate>Thu, 23 Jul 2026 18:50:00 -0500</pubDate>
+      <enclosure 
+        url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v0.9.42/TerpScribe-0.9.42.zip" 
+        sparkle:version="0.9.42" 
+        sparkle:shortVersionString="0.9.42" 
+        length="45120384" 
+        type="application/octet-stream" />
+    </item>
+  </channel>
+</rss>

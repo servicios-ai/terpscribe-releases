@@ -19,10 +19,10 @@
                 </ul>
                 ]]>
             </description>
-            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v0.9.42/TerpScribe-0.9.42.zip" 
-                       length="223541200" 
-                       type="application/octet-stream" 
-                       sparkle:edSignature="C5vUgiYfxD36NCVCzMmwuXlT/n2aVgns7Occt3cQxbshI696vAr11pRxUH0LBuwKiIgGhUXDPq9Yui/IJR80Bg==" />
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v0.9.42/Terpscribe.dmg" 
+           length="216000000" 
+           type="application/octet-stream" 
+           sparkle:edSignature="C5vUgiYfxD36NCVCzMmwuXlT/n2aVgns7Occt3cQxbshI696vAr11pRxUH0LBuwKiIgGhUXDPq9Yui/IJR80Bg==" />
             <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
         </item>
         <item>

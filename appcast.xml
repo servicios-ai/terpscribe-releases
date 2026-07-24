@@ -6,6 +6,26 @@
         <description>Most recent updates for TerpScribe.</description>
         <language>en</language>
         <item>
+            <title>Version 0.9.44</title>
+            <sparkle:version>0.9.44</sparkle:version>
+            <sparkle:shortVersionString>0.9.44</sparkle:shortVersionString>
+            <pubDate>Fri, 24 Jul 2026 13:00:00 -0500</pubDate>
+            <description>
+                <![CDATA[
+                <h3>What's New in 0.9.44:</h3>
+                <ul>
+                    <li>Contextual Initial Prompt Framing & Keyword Sanitization: Stripped metadata badges (- CR) from dynamic keywords and wrapped terms in natural sentence context to prevent Whisper prompt hallucination.</li>
+                    <li>N-Gram Multi-Word Repetition & Prompt Leak Guards: Added multi-word loop and prompt leakage guards across transcription pipeline.</li>
+                </ul>
+                ]]>
+            </description>
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v0.9.44/TerpScribe-0.9.44.zip" 
+                       length="223545562" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="Nmwrb2YGPxzlAj/YPINnAQmsUC3Snf4C6+ZKSLuI+9AXbDUvrrzgKtoJqy61pekDjI9XY3x3CClUW7Lj6wt6AA==" />
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+        </item>
+        <item>
             <title>Version 0.9.43</title>
             <sparkle:version>0.9.43</sparkle:version>
             <sparkle:shortVersionString>0.9.43</sparkle:shortVersionString>

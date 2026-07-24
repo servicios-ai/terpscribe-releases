@@ -6,6 +6,26 @@
         <description>Most recent updates for TerpScribe.</description>
         <language>en</language>
         <item>
+            <title>Version 0.9.45</title>
+            <sparkle:version>0.9.45</sparkle:version>
+            <sparkle:shortVersionString>0.9.45</sparkle:shortVersionString>
+            <pubDate>Fri, 24 Jul 2026 16:00:00 -0500</pubDate>
+            <description>
+                <![CDATA[
+                <h3>What's New in 0.9.45:</h3>
+                <ul>
+                    <li>System Prompt Self-Hallucination & Subtitle Suppression: Added prompt self-hallucination guard in engines/whisper.py to wipe out echoed system prompts, expanded NON_SPEECH_HALLUCINATIONS in audio.py to filter stock subtitle credits (provided by microsoft corporation), and added single-character stutter suppression.</li>
+                    <li>Universal Translation-Suppression & Quick Reference Isolation: Isolated Quick Reference as a 100% inert UI notepad and enabled dual-pass translation suppression across all engines.</li>
+                </ul>
+                ]]>
+            </description>
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v0.9.45/TerpScribe-0.9.45.zip" 
+                       length="223542553" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="ghz4qEHauHqapL0Ny3SEyW0/QcZHEHukJxuwbzEVkn8ytAREJ6Qb6K2UWcmQAPiYgfTYcSnwkzDWS1NaUMHyAQ==" />
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+        </item>
+        <item>
             <title>Version 0.9.44</title>
             <sparkle:version>0.9.44</sparkle:version>
             <sparkle:shortVersionString>0.9.44</sparkle:shortVersionString>

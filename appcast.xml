@@ -6,6 +6,25 @@
         <description>Most recent updates for TerpScribe.</description>
         <language>en</language>
         <item>
+            <title>Version 0.9.43</title>
+            <sparkle:version>0.9.43</sparkle:version>
+            <sparkle:shortVersionString>0.9.43</sparkle:shortVersionString>
+            <pubDate>Fri, 24 Jul 2026 11:25:00 -0500</pubDate>
+            <description>
+                <![CDATA[
+                <h3>What's New in 0.9.43:</h3>
+                <ul>
+                    <li>Added character repetition loop suppressor to collapse consecutive letter repetitions (Mmmmmmm...) and drop standalone hesitation tokens.</li>
+                </ul>
+                ]]>
+            </description>
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v0.9.43/TerpScribe-0.9.43.zip" 
+                       length="223542642" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="b/fJrQIKvPUOfPA60UguRykYTr7+aQ3AflQeM3gIQvKXrOIl9J79g0bJFopJv954BJe9XkpmR2HUHO+jvwFvCg==" />
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+        </item>
+        <item>
             <title>Version 0.9.42</title>
             <sparkle:version>0.9.42</sparkle:version>
             <sparkle:shortVersionString>0.9.42</sparkle:shortVersionString>
@@ -19,10 +38,10 @@
                 </ul>
                 ]]>
             </description>
-            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v0.9.42/Terpscribe.dmg" 
-           length="216000000" 
-           type="application/octet-stream" 
-           sparkle:edSignature="C5vUgiYfxD36NCVCzMmwuXlT/n2aVgns7Occt3cQxbshI696vAr11pRxUH0LBuwKiIgGhUXDPq9Yui/IJR80Bg==" />
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v0.9.42/TerpScribe-0.9.42.zip" 
+                       length="223541200" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="C5vUgiYfxD36NCVCzMmwuXlT/n2aVgns7Occt3cQxbshI696vAr11pRxUH0LBuwKiIgGhUXDPq9Yui/IJR80Bg==" />
             <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
         </item>
         <item>

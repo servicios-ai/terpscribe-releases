@@ -1,20 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
-  <channel>
-    <title>TerpScribe Updates</title>
-    <link>https://servicios-ai.github.io/terpscribe-releases/appcast.xml</link>
-    <description>Most recent updates for TerpScribe.</description>
-    <language>en</language>
-    <item>
-      <title>Version 0.9.42</title>
-      <sparkle:releaseNotesLink>https://github.com/servicios-ai/terpscribe-releases/releases/tag/v0.9.42</sparkle:releaseNotesLink>
-      <pubDate>Thu, 23 Jul 2026 18:50:00 -0500</pubDate>
-      <enclosure 
-        url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v0.9.42/TerpScribe-0.9.42.zip" 
-        sparkle:version="0.9.42" 
-        sparkle:shortVersionString="0.9.42" 
-        length="45120384" 
-        type="application/octet-stream" />
-    </item>
-  </channel>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>TerpScribe Updates</title>
+        <link>https://servicios-ai.github.io/terpscribe-releases/appcast.xml</link>
+        <description>Most recent updates for TerpScribe.</description>
+        <language>en</language>
+        <item>
+            <title>Version 0.9.42</title>
+            <sparkle:version>0.9.42</sparkle:version>
+            <sparkle:shortVersionString>0.9.42</sparkle:shortVersionString>
+            <pubDate>Thu, 23 Jul 2026 18:30:00 -0500</pubDate>
+            <description>
+                <![CDATA[
+                <h3>What's New in 0.9.42:</h3>
+                <ul>
+                    <li>Formatted number entity highlighting includes thousand/decimal separators as part of the yellow tag (e.g. 4,291).</li>
+                    <li>Single-click on formatted numbers adds the complete string (e.g. 4,291) directly to Quick Reference.</li>
+                </ul>
+                ]]>
+            </description>
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v0.9.42/TerpScribe-0.9.42.zip" 
+                       length="223541200" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="C5vUgiYfxD36NCVCzMmwuXlT/n2aVgns7Occt3cQxbshI696vAr11pRxUH0LBuwKiIgGhUXDPq9Yui/IJR80Bg==" />
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+        </item>
+        <item>
+            <title>Version 0.9.41</title>
+            <sparkle:version>0.9.41</sparkle:version>
+            <sparkle:shortVersionString>0.9.41</sparkle:shortVersionString>
+            <pubDate>Thu, 23 Jul 2026 17:42:00 -0500</pubDate>
+            <description>
+                <![CDATA[
+                <h3>What's New in 0.9.41:</h3>
+                <ul>
+                    <li>Integrated dedicated public model repository asset URL for 1-click zero-cost downloads while preserving private codebase security.</li>
+                    <li>Added SSL certificate verification context fallback to prevent certificate errors on clean macOS Python installations.</li>
+                </ul>
+                ]]>
+            </description>
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v0.9.41/TerpScribe-0.9.41.zip" 
+                       length="223540313" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="fbBIw8WN0Njpf7X2WykZtdn7bS/eo5h4Mb6hif35nGcwbA1/QGyVhGXtXvqVuCkyr7XgIBf40ZXfUEwfdInpCA==" />
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+        </item>
+        <item>
+            <title>Version 0.9.40</title>
+            <sparkle:version>0.9.40</sparkle:version>
+            <sparkle:shortVersionString>0.9.40</sparkle:shortVersionString>
+            <pubDate>Thu, 23 Jul 2026 15:55:00 -0500</pubDate>
+            <description>
+                <![CDATA[
+                <h3>What's New in 0.9.40:</h3>
+                <ul>
+                    <li>Direct GitHub Release model streaming with precise progress tracking and Hugging Face fallback.</li>
+                    <li>Tuned audio VAD overlap (360ms) and capped soft gain multiplier (2.0x) to eliminate boundary repetitions and noise amplification.</li>
+                    <li>Scenario-agnostic neutral prompt conditioning and unified single-pass master number normalization.</li>
+                </ul>
+                ]]>
+            </description>
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v0.9.40/TerpScribe-0.9.40.zip" 
+                       length="223539869" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="WPJ4pNI+dxHBgmJwUJQg4Tdz/1ufk1VrZhn9e3d76FUZoHPOSgU9N2ubDyzymA+t7DShDuWdpAQhOHTooa3RDA==" />
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+        </item>
+    </channel>
 </rss>

@@ -6,6 +6,27 @@
         <description>Most recent updates for TerpScribe.</description>
         <language>en</language>
         <item>
+            <title>Version 0.9.47</title>
+            <sparkle:version>0.9.47</sparkle:version>
+            <sparkle:shortVersionString>0.9.47</sparkle:shortVersionString>
+            <pubDate>Sat, 25 Jul 2026 18:15:00 -0500</pubDate>
+            <description>
+                <![CDATA[
+                <h3>What's New in 0.9.47:</h3>
+                <ul>
+                    <li>Log-Probability Candidate Scoring & Anti-Translation: Implemented avg_logprob candidate decoder scoring with native anchor density boost to guarantee native transcription over forced translation during language switching in dual-language mode.</li>
+                    <li>Decoder Context Drift Prevention: Completely removed initial_prompt from Whisper base decode options to eliminate English prompt context drift during non-English speech recognition.</li>
+                    <li>Accented Character Loop Suppression: Expanded suppress_character_loops in engines/normalize.py to cover accented vowel repetitions (e.g. "ÉÉÉÉ" -> "ÉÉÉ").</li>
+                </ul>
+                ]]>
+            </description>
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v0.9.47/TerpScribe-0.9.47.zip" 
+                       length="223542567" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="B3HUZ4XhgAQcCbi5d73zeJMvMpN69/GKhZWBXbR65QlwbvnDnhQg8YlyA8Sl6cE/ImnSQpV79xXsODmAg0LrDg==" />
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+        </item>
+        <item>
             <title>Version 0.9.45</title>
             <sparkle:version>0.9.45</sparkle:version>
             <sparkle:shortVersionString>0.9.45</sparkle:shortVersionString>

@@ -6,6 +6,27 @@
         <description>Most recent updates for TerpScribe.</description>
         <language>en</language>
         <item>
+            <title>Version 0.9.48</title>
+            <sparkle:version>0.9.48</sparkle:version>
+            <sparkle:shortVersionString>0.9.48</sparkle:shortVersionString>
+            <pubDate>Mon, 27 Jul 2026 08:50:00 -0500</pubDate>
+            <description>
+                <![CDATA[
+                <h3>What's New in 0.9.48:</h3>
+                <ul>
+                    <li>Pure Logprob Candidate Scoring: Reduced anchor density score multiplier to 0.01 to prevent translated English stopword inflation from outscoring raw acoustic decoding confidence (avg_logprob).</li>
+                    <li>Spanish Subtitle & Credit Hallucination Suppression: Expanded non-speech hallucination filter in audio.py to catch Spanish YouTube subtitle triggers ("suscríbete al canal", "suscribete", "gracias por ver", "subtítulos").</li>
+                    <li>Legal Short-List Protection & Dual Acoustic Noise Gate: Added protected short-words whitelist ("sí", "no", "ok", "yo") and required dual acoustic checks (RMS energy + crest factor) before suppressing low-energy background noise.</li>
+                </ul>
+                ]]>
+            </description>
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v0.9.48/TerpScribe-0.9.48.zip" 
+                       length="223542877" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="gPefyu4H3Rp1k42M7dUI24EdgJ7SQCEV8Rrue3SECl5myvbpPtqmzhKLPyDycDwvG5lKWI4/diMxUtPi6Rs1CA==" />
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+        </item>
+        <item>
             <title>Version 0.9.47</title>
             <sparkle:version>0.9.47</sparkle:version>
             <sparkle:shortVersionString>0.9.47</sparkle:shortVersionString>

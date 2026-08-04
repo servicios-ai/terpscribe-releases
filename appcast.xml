@@ -6,6 +6,25 @@
         <description>Most recent updates for TerpScribe.</description>
         <language>en</language>
         <item>
+            <title>Version 0.9.49</title>
+            <sparkle:version>0.9.49</sparkle:version>
+            <sparkle:shortVersionString>0.9.49</sparkle:shortVersionString>
+            <pubDate>Mon, 03 Aug 2026 20:44:00 -0500</pubDate>
+            <description>
+                <![CDATA[
+                <h3>What's New in 0.9.49:</h3>
+                <ul>
+                    <li>Log Directory Permission Guard: Added graceful fallback handling for logging and cache directory initialization to prevent startup crashes on macOS user accounts with restricted folder permissions.</li>
+                </ul>
+                ]]>
+            </description>
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v0.9.49/TerpScribe-0.9.49.zip" 
+                       length="223545815" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="HCSWbCjgdEep9sQ+qq/wLGw/OjRrRrcBxYSs0yi83u55rHI7GEhr79Hxx+aMcMSPZX45ed/rkwKx5KsUNsLRDQ==" />
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+        </item>
+        <item>
             <title>Version 0.9.48</title>
             <sparkle:version>0.9.48</sparkle:version>
             <sparkle:shortVersionString>0.9.48</sparkle:shortVersionString>

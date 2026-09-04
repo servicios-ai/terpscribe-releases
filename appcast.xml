@@ -6,6 +6,29 @@
         <description>Most recent updates for TerpScribe.</description>
         <language>en</language>
         <item>
+            <title>Version 1.10</title>
+            <sparkle:version>1.10</sparkle:version>
+            <sparkle:shortVersionString>1.10</sparkle:shortVersionString>
+            <pubDate>Fri, 04 Sep 2026 12:00:00 -0500</pubDate>
+            <description>
+                <![CDATA[
+                <h3>What's New in 1.10:</h3>
+                <ul>
+                    <li>General Availability &amp; Production Milestone: Official promotion of TerpScribe to the 1.x stable release line for professional conference and legal interpreters.</li>
+                    <li>Audio Tap Resilience &amp; CoreAudio Lifecycle: Emitted READY handshake immediately upon successful AudioDeviceStart in terpscribe_audio_tap and guaranteed explicit CoreAudio aggregate device and tap teardown on SIGTERM/exit, eliminating false permission timeouts and leaked coreaudiod resources.</li>
+                    <li>IIR Filter NaN Corruption Guard: Implemented NaN/Inf state sanitization in HighPassFilter80Hz to prevent floating-point anomalies from corrupting filter memory into permanent digital silence.</li>
+                    <li>Capture Thread Exception Resilience: Wrapped audio_capture_worker in a top-level exception handler to prevent silent thread crashes and ensure continuous background audio recovery.</li>
+                    <li>macOS App Nap Disabled: Set NSSupportsAppNap to False in application bundle configuration to ensure high-priority execution and avoid UI timer or meter throttling when TerpScribe is running in the background.</li>
+                </ul>
+                ]]>
+            </description>
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v1.10/TerpScribe-1.10.zip" 
+                       length="223548532" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="A5ar32wod3Go5g+tL0vDiZT1uuo/SdmRmzR3eM/HIF0Hk9iSkysFX3GmumLK6YMeYChzGZxh3E6ccj0CFdlGDg==" />
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+        </item>
+        <item>
             <title>Version 0.9.49</title>
             <sparkle:version>0.9.49</sparkle:version>
             <sparkle:shortVersionString>0.9.49</sparkle:shortVersionString>

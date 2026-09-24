@@ -6,6 +6,31 @@
         <description>Most recent updates for TerpScribe.</description>
         <language>en</language>
         <item>
+            <title>Version 1.15</title>
+            <sparkle:version>1.15</sparkle:version>
+            <sparkle:shortVersionString>1.15</sparkle:shortVersionString>
+            <pubDate>Thu, 24 Sep 2026 10:25:00 -0500</pubDate>
+            <description>
+                <![CDATA[
+                <h3>What's New in 1.15:</h3>
+                <ul>
+                    <li>Degraded Audio Acoustic Tagging ([Unclear]): Automatically identifies low-confidence, muffled, or faint speech and displays a distinct [Unclear] badge in the transcript and exports.</li>
+                    <li>Linear Phase Audio Tap Downmixing: Replaced phase-switching channel picking in native audio tap with standard linear phase-coherent averaging (0.5 * (L + R)), eliminating phase cancellation and distortion on stereo streams (Zoom, Teams, Meet).</li>
+                    <li>Acoustic Confidence Threshold Hardening: Raised candidate decode confidence floor to -0.85, preventing low-certainty acoustic guesswork and silence hallucinations.</li>
+                    <li>Cross-Candidate Non-Speech Consistency Guard: Discards alternate language candidates if one candidate outputs silence/filler defaults (e.g. 'Gracias').</li>
+                    <li>Language Anchor Grounding &amp; Foreign Script Filter: Requires functional anchor grounding for multi-word phrases and eliminates alien Nordic/Icelandic character leakage.</li>
+                    <li>Stutter &amp; Repeating Character Loop Filter: Automatically halts cyclic sub-character loops and hyphenated stutter cascades before they enter transcripts.</li>
+                    <li>Adaptive Speech Gain Scaling: Expanded peak normalization ceiling up to 6.0x to bring faint, distant voices into Whisper's optimal phonetic decoding range.</li>
+                </ul>
+                ]]>
+            </description>
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v1.15/TerpScribe-1.15.zip" 
+                       length="223315557" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="CwcXC2BkUDDkEWzY3RURk/hphfSrkqHMbPH80d33qWvqxCjAYC1HJ7qUC2ybn2EVY4apoWN+PNqF7j4GYMIyDw==" />
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+        </item>
+        <item>
             <title>Version 1.10</title>
             <sparkle:version>1.10</sparkle:version>
             <sparkle:shortVersionString>1.10</sparkle:shortVersionString>

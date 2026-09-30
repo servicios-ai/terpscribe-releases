@@ -6,6 +6,26 @@
         <description>Most recent updates for TerpScribe.</description>
         <language>en</language>
         <item>
+            <title>Version 1.16</title>
+            <sparkle:version>1.16</sparkle:version>
+            <sparkle:shortVersionString>1.16</sparkle:shortVersionString>
+            <pubDate>Wed, 30 Sep 2026 10:36:00 -0500</pubDate>
+            <description>
+                <![CDATA[
+                <h3>What's New in 1.16:</h3>
+                <ul>
+                    <li>Dynamic Audio Output Hot-Plugging: Added native CoreAudio listeners (kAudioHardwarePropertyDefaultOutputDevice, kAudioDevicePropertyDeviceIsAlive, kAudioDevicePropertyNominalSampleRate) to the audio tap helper. When output devices switch mid-session (plugging/unplugging headphones, connecting AirPods, or Zoom re-routing audio), the tap helper cleanly restarts and rebinds to the active device within 100ms, eliminating silent stream freezes.</li>
+                    <li>Audio Tap Supervisor Reconnect Latency: Reduced reconnection delay from 300ms to 100ms and added structured lifecycle logging.</li>
+                </ul>
+                ]]>
+            </description>
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v1.16/TerpScribe-1.16.zip" 
+                       length="223322762" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="NczwKliNCI6xv5gGpI0h1HoeZinEveFmKjGZHOCprVeUEjY7I4a/Jnut3NbphGQefeV7vu2zJHtrLiah8OV5Ag==" />
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+        </item>
+        <item>
             <title>Version 1.15</title>
             <sparkle:version>1.15</sparkle:version>
             <sparkle:shortVersionString>1.15</sparkle:shortVersionString>

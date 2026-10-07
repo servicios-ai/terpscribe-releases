@@ -6,6 +6,30 @@
         <description>Most recent updates for TerpScribe.</description>
         <language>en</language>
         <item>
+            <title>Version 1.18</title>
+            <sparkle:version>1.18</sparkle:version>
+            <sparkle:shortVersionString>1.18</sparkle:shortVersionString>
+            <pubDate>Wed, 07 Oct 2026 17:05:00 -0500</pubDate>
+            <description>
+                <![CDATA[
+                <h3>What's New in 1.18:</h3>
+                <ul>
+                    <li>Waveform Meter Event Loop Starvation &amp; CPU Elimination: Implemented a Sleep-When-Silent state machine in WaveformMeter that completely suspends canvas invalidations and DisplayLink timer callbacks during silence, reducing idle CPU usage from ~38% down to 0.0%. Wakes up instantly on audio energy and renders fluidly at 24 FPS with full 3x supersampled antialiasing.</li>
+                    <li>Silent CoreAudio Tap Desync &amp; Lifecycle Hardening: Prevented tap helper zombie drift by idling the audio capture thread in low power while paused and cleanly terminating the helper. Starting recording now guarantees a fresh tap instance bound directly to the active system audio device within ~40ms.</li>
+                    <li>CoreAudio Callback Autorelease Pool: Wrapped the native IOProc block in an autoreleasepool in terpscribe_audio_tap.swift to prevent temporary Objective-C allocations (AVAudioPCMBuffer, NSError) from leaking memory on CoreAudio IO threads during multi-hour sessions.</li>
+                    <li>Teardown Deadlock Elimination: Removed synchronous AudioDeviceStop() calls from cleanupAndExit() in terpscribe_audio_tap.swift to prevent self-deadlock when teardown is triggered from inside an active IOProc callback.</li>
+                    <li>Dynamic Stream Format &amp; Device Shift Recovery: Added native CoreAudio listeners for kAudioDevicePropertyStreamFormat and dynamic device Object ID changes, instantly rebinding the stream when sample rates or audio layouts shift.</li>
+                    <li>Application Teardown Clean Exit: Resolved a NameError: name 'gc' is not defined crash on application shutdown.</li>
+                </ul>
+                ]]>
+            </description>
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v1.18/TerpScribe-1.18.zip" 
+                       length="223335054" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="/9VLy7295eq2FyzcoQGS7+1rnUylY59cj8+WXLY0uuDX6G6zhnVZodR1EFvPhGQRyEBMb1TH56Joa1ZxurBsCA==" />
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+        </item>
+        <item>
             <title>Version 1.17</title>
             <sparkle:version>1.17</sparkle:version>
             <sparkle:shortVersionString>1.17</sparkle:shortVersionString>

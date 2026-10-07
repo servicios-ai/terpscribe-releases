@@ -22,9 +22,9 @@
                 ]]>
             </description>
             <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v1.17/TerpScribe-1.17.zip" 
-                       length="223332778" 
+                       length="223332448" 
                        type="application/octet-stream" 
-                       sparkle:edSignature="Gzkg0xPIGdkZk+/XA/MOxCw2XAbdxo//XlUM9fffRAl2kzVlljo5/IdPl22YV0V4jn30hRZRMAcUjtj2Pc9DBQ==" />
+                       sparkle:edSignature="6ncpMp6oF9KRcP0HNVPgHvKz7rCNUVaJjTGG6+fSXJ8HkOt/I/gW/MZlJsg8zEb12XQt+aZct8PVNak1BCryAw==" />
             <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
         </item>
         <item>

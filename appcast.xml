@@ -6,6 +6,28 @@
         <description>Most recent updates for TerpScribe.</description>
         <language>en</language>
         <item>
+            <title>Version 1.17</title>
+            <sparkle:version>1.17</sparkle:version>
+            <sparkle:shortVersionString>1.17</sparkle:shortVersionString>
+            <pubDate>Wed, 07 Oct 2026 12:08:00 -0500</pubDate>
+            <description>
+                <![CDATA[
+                <h3>What's New in 1.17:</h3>
+                <ul>
+                    <li>System Audio Tap Desync &amp; Silent Stream Recovery: Added CoreAudio property listeners (kAudioDevicePropertyDeviceIsRunning, kAudioDevicePropertyDeviceIsAlive, kAudioHardwarePropertyDevices) to detect and rebind silent stream stalls within 100ms.</li>
+                    <li>Resilient Audio Converter &amp; Frame Watchdog: Automatic recovery on sample rate converter errors and consecutive empty frame callbacks.</li>
+                    <li>Waveform Meter CPU Elimination &amp; UI Snappiness: Streamlined 3x supersampled rasterization onto a persistent canvas item with cached rendering states and idle throttling, reducing CPU consumption from ~45% down to &lt;1% while preserving pristine Retina antialiasing and particle glow.</li>
+                    <li>Manual Tap Refresh: Added click-to-refresh binding on the audio waveform bar.</li>
+                </ul>
+                ]]>
+            </description>
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v1.17/TerpScribe-1.17.zip" 
+                       length="223332778" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="Gzkg0xPIGdkZk+/XA/MOxCw2XAbdxo//XlUM9fffRAl2kzVlljo5/IdPl22YV0V4jn30hRZRMAcUjtj2Pc9DBQ==" />
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+        </item>
+        <item>
             <title>Version 1.16</title>
             <sparkle:version>1.16</sparkle:version>
             <sparkle:shortVersionString>1.16</sparkle:shortVersionString>

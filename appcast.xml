@@ -6,6 +6,29 @@
         <description>Most recent updates for TerpScribe.</description>
         <language>en</language>
         <item>
+            <title>Version 1.19</title>
+            <sparkle:version>1.19</sparkle:version>
+            <sparkle:shortVersionString>1.19</sparkle:shortVersionString>
+            <pubDate>Sun, 18 Oct 2026 14:22:15 -0500</pubDate>
+            <description>
+                <![CDATA[
+                <h3>What's New in 1.19:</h3>
+                <ul>
+                    <li>CoreAudio Sub-Tap Drift Compensation &amp; Zero-Allocation IOProc: Configured kAudioSubTapDriftCompensationKey: 1 and kAudioAggregateDriftCompensationHighQuality on the aggregate device in terpscribe_audio_tap.swift, preventing CoreAudio clock drift from muting the sub-tap with silence during extended sessions. Pre-allocated monoInputBuf (frameCapacity: 4096) outside the real-time IOProc callback, eliminating heap buffer allocations in real-time audio threads.</li>
+                    <li>Dynamic Hardware Route &amp; Headphone Data Source Listeners: Implemented CoreAudio property listeners for kAudioDevicePropertyDataSource (to detect 3.5mm headphone plug/unplug route shifts without device ID changes), kAudioHardwarePropertyDefaultSystemOutputDevice, kAudioTapPropertyFormat, kAudioAggregateDevicePropertyFullSubDeviceList, and kAudioAggregateDevicePropertyMainSubDevice, ensuring seamless auto-recovery when routing changes.</li>
+                    <li>System Sleep/Wake Auto-Reconnection: Added NSWorkspace.didWakeNotification and screensDidWakeNotification observers to gracefully tear down and rebind the audio capture graph when the Mac wakes up from sleep or display standby.</li>
+                    <li>Multiprocessing Resource Tracker &amp; Semaphore Leak Fix: Overrode tqdm's global multiprocessing write lock creation at startup to use thread locking, completely preventing multiprocessing.resource_tracker daemon initialization and eliminating semaphore leaks upon application shutdown.</li>
+                    <li>Interactive Audio Tap Reconnection Controls: Bound tap refresh to the status dot (status_dot) and visual audio energy bar (smart_audio_bar), giving users one-click reconnect capability anywhere across the audio meter strip.</li>
+                </ul>
+                ]]>
+            </description>
+            <enclosure url="https://github.com/servicios-ai/terpscribe-releases/releases/download/v1.19/TerpScribe-1.19.zip" 
+                       length="223358629" 
+                       type="application/octet-stream" 
+                       sparkle:edSignature="NN6c0ZGR+mkAKRtyxj7ZfYiOORwscI+A6dd/FKV3qDR5KvNCUrRVFWUJQMJum/8XyB1O0bQMOsz/1ENxkf2jBw==" />
+            <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+        </item>
+        <item>
             <title>Version 1.18</title>
             <sparkle:version>1.18</sparkle:version>
             <sparkle:shortVersionString>1.18</sparkle:shortVersionString>
